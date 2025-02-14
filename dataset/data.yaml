@@ -1,0 +1,13 @@
+train: ./train/images
+val: C:\Users\glavi\PythonExcercise\ai_computer_vision\dataset\valid\images
+test: ./test/images
+
+nc: 2
+names: ['benign', 'malignant']
+
+roboflow:
+  workspace: arshad-rv7jf
+  project: skincancer-kcuu6
+  version: 1
+  license: CC BY 4.0
+  url: https://universe.roboflow.com/arshad-rv7jf/skincancer-kcuu6/dataset/1
