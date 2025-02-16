@@ -27,7 +27,7 @@ if __name__ == '__main__':
     print(f'Depth: {classifier.get_depth()}')
     print(f'Number of leaves: {classifier.get_n_leaves()}')
     features_importance = list(classifier.feature_importances_)
-    print(features_importance)
+
     most_important_feature = features_importance.index(max(features_importance))
     print(f'Most important feature: {most_important_feature}')
 

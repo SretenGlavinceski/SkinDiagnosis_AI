@@ -5,7 +5,7 @@ def predict_image(image_path):
     model = YOLO("C:/Users/glavi/PythonExcercise/ai_computer_vision/yolov11_model/best.pt")
 
     results = model.predict(source=image_path, show=True)
-
+    # results[0].save(result_path)
     # 0: 'benign', 1: 'melanoma'
     detections = []
     for result in results:

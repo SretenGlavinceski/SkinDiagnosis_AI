@@ -12,7 +12,7 @@ def read_file(file_name):
     return dataset
 
 
-def divide_sets(dataset, train_ratio=0.7, val_ratio=0.1):
+def divide_sets(dataset, train_ratio=0.8, val_ratio=0.1):
     class_m = [x for x in dataset if x[0] == 1]
     class_b = [x for x in dataset if x[0] == 0]
 
@@ -81,7 +81,6 @@ if __name__ == '__main__':
     test_acc = accuracy_score(test_y, test_predictions)
     print(f'Test accuracy {test_acc:.2f}')
 
-    print("Report")
     print(classification_report(test_y, test_predictions))
 
     avg_precision = average_precision_score(test_y, test_predictions, average='macro')
